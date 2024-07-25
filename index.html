@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="calculator">
+
+        <div class="options">
+            <button id="function" class="clear"> <img src="🦆 icon _function square_ (6).png" alt="C"></button>
+            <button id="convertor" class="back"> <img src="convertor.png" alt="I"></button>
+        </div>
+
+        <div class="display-cont">
+            <input id="Display" type="text">
+        </div>
+
+       
+
+        <div class="button">
+            <button id="btn-C" onclick="clearDisplay()">C</button>
+            <button id="btn-del" onclick="backspace()"> <img id="delet" src="🦆 icon _delete_.png" alt="I" width="20" height="15"></button>
+            <button id="btn-per" onclick="clickToEnter('%')" >%</button>
+            <button id="btn-div" onclick="clickToEnter('/')" >/</button>
+            <button id="btn-7" onclick="clickToEnter('7')" >7</button>
+            <button id="btn-8" onclick="clickToEnter('8')" >8</button>
+            <button id="btn-9" onclick="clickToEnter('9')" >9</button>
+            <button id="btn-mt" onclick="clickToEnter('*')" >*</button>
+            <button id="btn-4" onclick="clickToEnter('4')" >4</button>
+            <button id="btn-5" onclick="clickToEnter('5')" >5</button>
+            <button id="btn-6" onclick="clickToEnter('6')" >6</button>
+            <button id="btn--" onclick="clickToEnter('-')" >-</button>
+            <button id="btn-1" onclick="clickToEnter('1')" >1</button>
+            <button id="btn-2" onclick="clickToEnter('2')" >2</button>
+            <button id="btn-1" onclick="clickToEnter('3')" >3</button>
+            <button id="btn-add" onclick="clickToEnter('+')" >+</button>
+            <button id="btn-0" onclick="clickToEnter('0')" >0</button>
+            <button id="btn-00" onclick="clickToEnter('00')" >00</button>
+            <button id="btn-." onclick="clickToEnter('.')" >.</button>
+            
+
+            
+            <button id="btn-equal" onclick="calculateResult()" >=</button>
+        </div>
+
+    </div>
+    
+    <script src="fun.js" ></script>
+</body>
+</html>
